@@ -1,1 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Modern Web Page</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease;
+        }
+
+        .carousel-caption {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .alert {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1050;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="#"><strong>Frankie's Web Services</strong></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Carousel -->
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://via.placeholder.com/1200x400" class="d-block w-100" alt="Frankie is designing this for class">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="text-light">Welcome to Our Services</h5>
+                    <p>Responsive, sleek, and modern web solutions.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://via.placeholder.com/1200x400" class="d-block w-100" alt="Pigeon Racing at it's finest">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="text-light">Custom Designs</h5>
+                    <p>Tailored to fit your brand and goals.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://via.placeholder.com/1200x400" class="d-block w-100" alt=""A detailed roadmap ensures we stay on track and aligned with your objectives."A detailed roadmap ensures we stay on track and aligned with your objectives.">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="text-light">Innovative Features</h5>
+                    <p>Interactive elements that elevate your website.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Dynamic Alert -->
+    <div id="dynamicAlert" class="alert alert-primary alert-dismissible fade" role="alert">
+        <span id="alertMessage"></span>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+
+    <!-- Services Section -->
+    <section id="services" class="py-5">
+        <div class="container text-center">
+            <h2 class="mb-4">Our Services</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Pigeon Training </h5>
+                            <p class="card-text">Training Method for best output for the birds.</p>
+                            <button class="btn btn-primary" onclick="showAlert('Web Development')">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Feeding for the Races</h5>
+                            <p class="card-text">"Your input matters. We’ll work together to shape your vision into reality.".</p>
+                            <button class="btn btn-primary" onclick="showAlert('UI/UX Design')">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Fernando Valley Pigeon Club</h5>
+                            <p class="card-text">Fernando Valley Racing Pigeon Club (FVC), is a prestigious event with a rich history..</p>
+                            <button class="btn btn-primary" onclick="showAlert('SEO Optimization')">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-light text-center py-3">
+        <p class="mb-0">&copy; 2025 Pigeon Services. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script>
+        function showAlert(service) {
+            const alertBox = document.getElementById('dynamicAlert');
+            const alertMessage = document.getElementById('alertMessage');
+            alertMessage.textContent = `You selected: ${service}`;
+            alertBox.classList.add('show');
+            setTimeout(() => {
+                alertBox.classList.remove('show');
+            }, 3000);
+        }
+    </script>
+</body>
+
+</html>
