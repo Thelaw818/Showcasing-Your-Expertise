@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services Provided</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f8f9fa;
+        }
+
+        .content-wrapper {
+            max-width: 800px;
+            margin: 80px auto;
+            background-color: white;
+            padding: 30px;
+            border: 2px solid #007bff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            text-align: center;
+            color: #007bff;
+            margin-bottom: 20px;
+        }
+
+        p {
+            line-height: 1.8;
+            text-align: justify;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        .navbar {
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">FVC Racing Pigeons</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Content Wrapper -->
+    <div class="content-wrapper text-center">
+        <h1>Services Provided</h1>
+        <p><strong>Experience the Legacy of Excellence with the Fernando Valley Futurity Race</strong></p>
+        <p>The Fernando Valley Futurity Race, organized by the Fernando Valley Racing Pigeon Club (FVC), offers an unparalleled opportunity for pigeon racing enthusiasts to engage with one of the most prestigious events in the sport. With a history dating back to 1938 in Sun Valley, California, the FVC has established itself as a cornerstone of the pigeon racing community, earning a reputation for excellence and dedication.</p>
+
+        <h4>Why Choose the FVC Futurity Race?</h4>
+        <ul class="text-start">
+            <li><strong>A Rich Heritage:</strong> As a club with deep roots in pigeon racing, the FVC has been preserving and celebrating the sport’s traditions for decades. In 2015, the establishment of the Fernando Valley Club Museum solidified this commitment, showcasing an extensive collection of pigeon racing memorabilia that highlights the evolution of the sport and the club's achievements.</li>
+            <li><strong>A Premier Event:</strong> The upcoming 2024 FVC Futurity Race, themed “Rebirth,” is a testament to the club’s dedication to innovation and excellence. This highly anticipated competition will challenge pigeons across a demanding 400-mile course from Williams, California, bringing together the most skilled competitors in the nation.</li>
+            <li><strong>Advancing the Sport:</strong> The FVC is more than a club; it’s a driving force in the pigeon racing world. By fostering community, promoting fair competition, and providing events that push the limits of the sport, the FVC continues to shape the future of pigeon racing.</li>
+        </ul>
+
+        <h4>What Makes Us Stand Out?</h4>
+        <ul class="text-start">
+            <li><strong>Expert Organization:</strong> Decades of experience ensure that every race is meticulously planned and executed, providing both participants and spectators with an exceptional experience.</li>
+            <li><strong>Commitment to Excellence:</strong> From the quality of the competition to the preservation of pigeon racing history, the FVC takes pride in every detail.</li>
+            <li><strong>A Community of Passionate Enthusiasts:</strong> Joining the FVC means becoming part of a network that shares your love for this timeless sport.</li>
+        </ul>
+
+        <p><strong>Join Us for the Experience of a Lifetime</strong></p>
+        <p>The Fernando Valley Futurity Race is more than just a race—it’s a celebration of tradition, competition, and the enduring bond between pigeons and their trainers. Whether you’re a seasoned racer or new to the sport, this event is an opportunity to be part of something truly special.</p>
+        <p>For more information about our events, our legacy, and how you can participate, visit our official website: <strong>Fernando Valley Club – Racing Pigeons</strong>. Let’s soar to new heights together!</p>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
