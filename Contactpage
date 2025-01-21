@@ -11,13 +11,15 @@
     <style>
         body {
             font-family: 'Roboto', sans-serif;
-            background-color: #f8f9fa;
+            background: url('images/BannerWP_Prodotto_1028x566.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
         }
 
         .content-wrapper {
             max-width: 800px;
             margin: 80px auto;
-            background-color: white;
+            background-color: rgba(255, 255, 255, 0.9);
             padding: 30px;
             border: 2px solid #007bff;
             border-radius: 10px;
@@ -33,6 +35,12 @@
 
         .navbar {
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+
+        .navbar-brand,
+        .nav-link {
+            color: #007bff !important;
         }
 
         .form-control,
@@ -53,7 +61,7 @@
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#">My Portfolio</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
