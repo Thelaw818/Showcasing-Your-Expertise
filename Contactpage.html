@@ -56,6 +56,10 @@
         .btn-primary:hover {
             background-color: #0056b3;
         }
+
+        .intro-text {
+            color: #333; /* Darker text color for better readability */
+        }
     </style>
 </head>
 
@@ -63,21 +67,23 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#">My Portfolio</a>
+            <a class="navbar-brand" href="https://thelaw818.github.io/Showcasing-Your-Expertise/index.html">My Portfolio</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#services">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#portfolio">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#contact">Contact</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Navigate
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="https://thelaw818.github.io/Showcasing-Your-Expertise/services.html">Services</a></li>
+                            <li><a class="dropdown-item" href="https://thelaw818.github.io/Showcasing-Your-Expertise/Portfolio.html">Portfolio</a></li>
+                            <li><a class="dropdown-item" href="https://thelaw818.github.io/Showcasing-Your-Expertise/Contactpage.html">Contact</a></li>
+                        </ul>
                     </li>
                 </ul>
             </div>
@@ -87,7 +93,7 @@
     <!-- Content Wrapper -->
     <div class="content-wrapper">
         <h1>Contact Us</h1>
-        <p class="text-center">
+        <p class="text-center intro-text">
             Have questions, comments, or want to collaborate? We'd love to hear from you! Please fill out the form below, and we’ll get back to you as soon as possible.
         </p>
 
