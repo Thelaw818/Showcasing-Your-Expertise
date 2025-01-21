@@ -34,14 +34,18 @@
             display: none;
         }
 
-        .image-section img {
-            display: block;
-            max-width: 100%;
-            height: auto;
-            margin: 20px auto;
-            border: 5px solid #007bff;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        .image-gallery {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .image-gallery img {
+            width: 3in;
+            height: 3in;
+            border: 2px solid black;
+            border-radius: 5px;
         }
     </style>
 </head>
@@ -147,6 +151,13 @@
         </div>
     </section>
 
+    <!-- Image Gallery -->
+    <div class="image-gallery">
+        <img src="images/fvc_clubhouse.jpg" alt="FVC Clubhouse">
+        <img src="images/OriginalFVCLogo300.jpg" alt="Original FVC Logo">
+        <img src="images/16992129_1934432536792757_7526832457612510511_o.jpg" alt="FVC Event">
+    </div>
+
     <!-- Footer -->
     <footer class="bg-light text-center py-3">
         <p class="mb-0">&copy; 2025 Pigeon Services. All rights reserved.</p>
@@ -157,4 +168,5 @@
 </body>
 
 </html>
+
 
