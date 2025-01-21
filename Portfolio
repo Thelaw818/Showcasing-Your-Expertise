@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frankie's Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: url('https://via.placeholder.com/1920x1080.png?text=Pigeons+Flying') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+        }
+
+        .content-wrapper {
+            max-width: 800px;
+            margin: 80px auto;
+            background-color: rgba(0, 123, 255, 0.8);
+            padding: 30px;
+            border: 2px solid #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            text-align: center;
+            color: #fff;
+            margin-bottom: 20px;
+        }
+
+        p {
+            line-height: 1.8;
+            text-align: justify;
+        }
+
+        .portfolio-item {
+            margin-bottom: 30px;
+        }
+
+        .portfolio-item img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        .navbar {
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+
+        .navbar-brand,
+        .nav-link {
+            color: #007bff !important;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Frankie's Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Content Wrapper -->
+    <div class="content-wrapper">
+        <h1>Frankie's Portfolio</h1>
+        <p><strong>Welcome to My Portfolio</strong></p>
+        <p>I am Frankie, a passionate pigeon racer and a proud member of the Fernando Valley Racing Pigeon Club (FVC). Explore my journey, achievements, and love for the sport of pigeon racing.</p>
+
+        <!-- Portfolio Items -->
+        <div class="portfolio-item">
+            <h3>Project 1: 2022 FVC Futurity Race</h3>
+            <p>Placed in the Top 10 among over 500 competitors in a challenging 400-mile race, demonstrating the skills and resilience of my pigeons.</p>
+            <img src="https://via.placeholder.com/750x400" alt="2022 FVC Futurity Race">
+        </div>
+
+        <div class="portfolio-item">
+            <h3>Project 2: Champion Bird - "Sky Ace"</h3>
+            <p>Achieved 1st place in the 2023 Regional Championship with my champion bird, "Sky Ace," showcasing exceptional breeding and training methods.</p>
+            <img src="https://via.placeholder.com/750x400" alt="Sky Ace - Champion Bird">
+        </div>
+
+        <div class="portfolio-item">
+            <h3>Project 3: FVC Community Contributions</h3>
+            <p>Actively involved in mentoring new racers and organizing events, fostering a thriving community within the Fernando Valley Racing Pigeon Club.</p>
+            <img src="https://via.placeholder.com/750x400" alt="FVC Community">
+        </div>
+
+        <h3>Contact Me</h3>
+        <p>Feel free to reach out for collaboration or to learn more about my journey in pigeon racing.</p>
+        <ul>
+            <li>Email: frankie.pigeons@fvc.com</li>
+            <li>Phone: (123) 456-7890</li>
+            <li>Instagram: <a href="#">@FrankieRaces</a></li>
+            <li>Facebook: <a href="#">Frankie FVC Pigeon Racing</a></li>
+        </ul>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
