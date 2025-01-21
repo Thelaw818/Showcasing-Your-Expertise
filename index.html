@@ -74,7 +74,7 @@
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="https://via.placeholder.com/1200x400" class="d-block w-100" alt="Pigeon Racing at it's finest">
+                <img src="https://via.placeholder.com/1200x400" class="d-block w-100" alt="Pigeon Racing at its finest">
                 <div class="carousel-caption d-none d-md-block">
                     <h5 class="text-light">Custom Designs</h5>
                     <p>Tailored to fit your brand and goals.</p>
@@ -114,9 +114,9 @@
                 <div class="col-md-4">
                     <div class="card shadow-sm">
                         <div class="card-body">
-                            <h5 class="card-title">Pigeon Training </h5>
+                            <h5 class="card-title">Pigeon Training</h5>
                             <p class="card-text">Training Method for best output for the birds.</p>
-                            <button class="btn btn-primary" onclick="showAlert('Pigeon Training')">Learn More</button>
+                            <a href="LearnMorePigeonTraining.html" class="btn btn-primary">Learn More</a>
                         </div>
                     </div>
                 </div>
@@ -125,7 +125,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Feeding for the Races</h5>
                             <p class="card-text">Your input matters. We’ll work together to shape your vision into reality.</p>
-                            <button class="btn btn-primary" onclick="showAlert('Feeding for Races')">Learn More</button>
+                            <a href="LearnMoreFeeding.html" class="btn btn-primary">Learn More</a>
                         </div>
                     </div>
                 </div>
@@ -134,7 +134,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Fernando Valley Pigeon Club</h5>
                             <p class="card-text">Fernando Valley Racing Pigeon Club (FVC), is a prestigious event with a rich history.</p>
-                            <button class="btn btn-primary" onclick="showAlert('FVC Club')">Learn More</button>
+                            <a href="FernandoValleyPigeonClub.html" class="btn btn-primary">Learn More</a>
                         </div>
                     </div>
                 </div>
@@ -149,17 +149,7 @@
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        function showAlert(service) {
-            const alertBox = document.getElementById('dynamicAlert');
-            const alertMessage = document.getElementById('alertMessage');
-            alertMessage.textContent = `You selected: ${service}`;
-            alertBox.classList.add('show');
-            setTimeout(() => {
-                alertBox.classList.remove('show');
-            }, 3000);
-        }
-    </script>
 </body>
 
 </html>
+
