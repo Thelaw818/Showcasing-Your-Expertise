@@ -11,17 +11,20 @@
     <style>
         body {
             font-family: 'Roboto', sans-serif;
-            background-color: #f8f9fa;
+            background: url('images/BannerWP_Prodotto_1028x566.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
         }
 
         .content-wrapper {
             max-width: 800px;
             margin: 80px auto;
-            background-color: white;
+            background-color: rgba(255, 255, 255, 0.9);
             padding: 30px;
             border: 2px solid #007bff;
             border-radius: 10px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            color: #000;
         }
 
         h1 {
@@ -46,6 +49,12 @@
 
         .navbar {
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+
+        .navbar-brand,
+        .nav-link {
+            color: #007bff !important;
         }
     </style>
 </head>
@@ -54,21 +63,23 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#">FVC Racing Pigeons</a>
+            <a class="navbar-brand" href="https://thelaw818.github.io/Showcasing-Your-Expertise/index.html">FVC Racing Pigeons</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#services">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#portfolio">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Navigate
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="https://thelaw818.github.io/Showcasing-Your-Expertise/services.html">Services</a></li>
+                            <li><a class="dropdown-item" href="https://thelaw818.github.io/Showcasing-Your-Expertise/Portfolio.html">Portfolio</a></li>
+                            <li><a class="dropdown-item" href="https://thelaw818.github.io/Showcasing-Your-Expertise/Contactpage.html">Contact</a></li>
+                        </ul>
                     </li>
                 </ul>
             </div>
