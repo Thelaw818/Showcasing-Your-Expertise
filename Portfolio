@@ -11,7 +11,7 @@
     <style>
         body {
             font-family: 'Roboto', sans-serif;
-            background: url('https://via.placeholder.com/1920x1080.png?text=Pigeons+Flying') no-repeat center center fixed;
+            background: url('images/BannerWP_Prodotto_1028x566.jpg') no-repeat center center fixed;
             background-size: cover;
             color: #fff;
         }
