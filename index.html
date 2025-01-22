@@ -26,33 +26,34 @@
             border-radius: 10px;
         }
 
-        .alert {
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            z-index: 1050;
-            display: none;
+        .section-title {
+            color: #007bff;
+            margin-bottom: 20px;
         }
 
-        .image-gallery {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            margin-top: 40px;
+        .navbar {
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            background-color: rgba(255, 255, 255, 0.9);
         }
 
-        .image-gallery img {
-            width: 3in;
-            height: 3in;
-            border: 2px solid black;
-            border-radius: 5px;
+        .navbar-brand, .nav-link {
+            color: #007bff !important;
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            border: none;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
         }
     </style>
 </head>
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
         <div class="container">
             <a class="navbar-brand" href="https://thelaw818.github.io/Showcasing-Your-Expertise/index.html"><strong>Frankie's Web Services</strong></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -77,47 +78,75 @@
         </div>
     </nav>
 
-    <!-- Slideshow -->
-    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <!-- Slide 1 -->
-            <div class="carousel-item active">
-                <img src="images/BannerWP_Prodotto_1028x566.jpg" class="d-block w-100" alt="Banner">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5 class="text-light">Showcasing Expertise</h5>
-                    <p>Delivering tailored, responsive web solutions.</p>
+    <!-- Services Section -->
+    <section id="services" class="py-5">
+        <div class="container text-center">
+            <h2 class="section-title">Our Services</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Pigeon Training</h5>
+                            <p class="card-text">Training Method for best output for the birds.</p>
+                            <a href="https://thelaw818.github.io/Showcasing-Your-Expertise/LearnMorePigeontraining.html"
+                               class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <!-- Slide 2 -->
-            <div class="carousel-item">
-                <img src="images/fvc_clubhouse.jpg" class="d-block w-100" alt="FVC Clubhouse">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5 class="text-light">Fernando Valley Clubhouse</h5>
-                    <p>Experience the heart of pigeon racing.</p>
+                <div class="col-md-4">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Feeding for the Races</h5>
+                            <p class="card-text">Your input matters. We’ll work together to shape your vision into reality.</p>
+                            <a href="https://thelaw818.github.io/Showcasing-Your-Expertise/LearnMoreFeeding.html"
+                               class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <!-- Slide 3 -->
-            <div class="carousel-item">
-                <img src="images/OriginalFVCLogo300.jpg" class="d-block w-100" alt="FVC Logo">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5 class="text-light">Original FVC Logo</h5>
-                    <p>A legacy built on passion and commitment.</p>
-                </div>
-            </div>
-            <!-- Slide 4 -->
-            <div class="carousel-item">
-                <img src="images/16992129_1934432536792757_7526832457612510511_o.jpg" class="d-block w-100" alt="FVC Event">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5 class="text-light">FVC Event Highlights</h5>
-                    <p>Celebrating milestones and achievements.</p>
+                <div class="col-md-4">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Fernando Valley Pigeon Club</h5>
+                            <p class="card-text">Fernando Valley Racing Pigeon Club (FVC), is a prestigious event with a rich history.</p>
+                            <a href="https://thelaw818.github.io/Showcasing-Your-Expertise/FernandoValleyPigeonClub.html"
+                               class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    </section>
+
+    <!-- Slideshow -->
+    <div id="servicesCarousel" class="carousel slide py-5" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/BannerWP_Prodotto_1028x566.jpg" class="d-block w-100" alt="First Slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Web Development Excellence</h5>
+                    <p>Experience tailored solutions for your business needs.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/fvc_clubhouse.jpg" class="d-block w-100" alt="Second Slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Fernando Valley Clubhouse</h5>
+                    <p>A tradition of racing excellence and community support.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/OriginalFVCLogo300.jpg" class="d-block w-100" alt="Third Slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Our Legacy</h5>
+                    <p>Decades of dedication to fostering pigeon racing.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#servicesCarousel" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <button class="carousel-control-next" type="button" data-bs-target="#servicesCarousel" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
         </button>
