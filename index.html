@@ -51,6 +51,15 @@
         .btn-primary:hover {
             background-color: #0056b3;
         }
+
+        @keyframes scroll-text {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
     </style>
 </head>
 
@@ -84,6 +93,14 @@
     <!-- Services Section -->
     <section id="services" class="py-5">
         <div class="container text-center">
+
+            <!-- Scrolling Banner -->
+            <div style="border: 2px solid black; overflow: hidden; white-space: nowrap; margin: 20px 0;">
+                <p style="display: inline-block; animation: scroll-text 10s linear infinite; margin: 0; padding: 10px; font-size: 18px; font-weight: bold;">
+                    Frank has the best pigeon services around.
+                </p>
+            </div>
+
             <h2 class="mb-4">Our Services</h2>
             <div class="row g-4">
                 <div class="col-md-4">
