@@ -94,6 +94,15 @@
         #coupon-section p {
             margin-bottom: 15px;
         }
+
+        /* Carousel Progress Indicator */
+        .carousel-indicators li {
+            background-color: #007bff;
+        }
+
+        .carousel-indicators .active {
+            background-color: #0056b3;
+        }
     </style>
 </head>
 
@@ -203,33 +212,39 @@
     <!-- Slideshow -->
     <section class="py-5 text-center">
         <div id="servicesCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#servicesCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#servicesCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#servicesCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#servicesCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img src="images/BannerWP_Prodotto_1028x566.jpg" alt="Banner Image" loading="lazy">
                     <div class="carousel-caption d-none d-md-block">
                         <h5>Professional Pigeon Flyer</h5>
-                        <p>Custom solutions for your unique Pigeon business needs.</p>
+                        <p>This banner highlights our cutting-edge technology for pigeon racing enthusiasts.</p>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img src="images/fvc_clubhouse.jpg" alt="FVC Clubhouse" loading="lazy">
                     <div class="carousel-caption d-none d-md-block">
                         <h5>Fernando Valley Clubhouse</h5>
-                        <p>A tradition of racing excellence and community support.</p>
+                        <p>A hub for community building and training sessions for racing pigeons.</p>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img src="images/OriginalFVCLogo300.jpg" alt="FVC Logo" loading="lazy">
                     <div class="carousel-caption d-none d-md-block">
                         <h5>Our Legacy</h5>
-                        <p>Preserving traditions while embracing innovation.</p>
+                        <p>Showcasing the iconic logo that represents decades of excellence.</p>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img src="images/16992129_1934432536792757_7526832457612510511_o.jpg" alt="FVC Event" loading="lazy">
                     <div class="carousel-caption d-none d-md-block">
                         <h5>Celebrating Excellence</h5>
-                        <p>Hosting world-class events for pigeon racing enthusiasts.</p>
+                        <p>A snapshot from one of our premier pigeon racing events.</p>
                     </div>
                 </div>
             </div>
