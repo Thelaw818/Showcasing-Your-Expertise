@@ -1,30 +1,39 @@
-// Wait for the DOM to load
-document.addEventListener('DOMContentLoaded', () => {
-    const couponButton = document.getElementById('coupon-button');
-    const couponPopup = document.getElementById('coupon-popup');
-    const closeButton = document.querySelector('.close-btn');
-    const applyCouponButton = document.getElementById('apply-coupon');
+#coupon-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
 
-    // Show the popup when the button is clicked
-    couponButton.addEventListener('click', () => {
-        couponPopup.style.display = 'flex';
-    });
+#coupon-popup > div {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+}
 
-    // Hide the popup when the close button is clicked
-    closeButton.addEventListener('click', () => {
-        couponPopup.style.display = 'none';
-    });
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
 
-    // Optional: Hide the popup when clicking outside of it
-    window.addEventListener('click', (e) => {
-        if (e.target === couponPopup) {
-            couponPopup.style.display = 'none';
-        }
-    });
+button#apply-coupon {
+    background: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
 
-    // Simulate applying the coupon
-    applyCouponButton.addEventListener('click', () => {
-        alert('Your 50% discount has been applied! 🎉');
-        couponPopup.style.display = 'none';
-    });
-});
