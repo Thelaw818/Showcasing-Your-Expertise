@@ -2,6 +2,8 @@
 const popup = document.getElementById("coupon-popup");
 const closeBtn = document.querySelector(".close-btn");
 const applyCouponBtn = document.getElementById("apply-coupon");
+const showCouponBtn = document.getElementById("show-coupon-btn");
+const openCouponPopupBtn = document.getElementById("open-coupon-popup");
 
 // Function to show the coupon popup
 function showCouponPopup() {
@@ -13,14 +15,17 @@ function closeCouponPopup() {
     popup.style.display = "none"; // Hides the popup by changing display to none
 }
 
+// Event listener to open the popup
+openCouponPopupBtn.addEventListener("click", showCouponPopup);
+
 // Event listener to close the popup when the close button is clicked
 closeBtn.addEventListener("click", closeCouponPopup);
 
 // Event listener to close the popup when the "Apply Coupon" button is clicked
 applyCouponBtn.addEventListener("click", function() {
-    alert("Coupon Applied!"); // Placeholder for coupon logic
-    closeCouponPopup(); // Hide the popup after applying coupon
+    window.location.href = "https://www.webbuildersguide.com/best-website-builder/cheapest/wordpress-coupon-code/"; // Redirect to coupon page
+    closeCouponPopup(); // Close the popup after redirect
 });
 
 // Example: Trigger to show the coupon popup (this could be triggered by an event like a button click)
-document.getElementById("show-coupon-btn").addEventListener("click", showCouponPopup);
+showCouponBtn.addEventListener("click", showCouponPopup);
