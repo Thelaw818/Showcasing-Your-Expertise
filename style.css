@@ -16,7 +16,17 @@ body {
     color: #333;
 }
 
-/* Header Styles */
+/* Image Styles */
+.image-row img {
+    width: 4in; /* 4 inches width */
+    height: 4in; /* 4 inches height */
+    border: 4px solid black; /* 4px black border */
+    border-radius: 5px; /* Optional rounded corners */
+    object-fit: cover; /* Make sure the image covers the 4x4 area */
+    margin: 10px; /* Spacing between images */
+}
+
+/* Other styles */
 header {
     background-color: #333;
     color: #fff;
@@ -70,156 +80,4 @@ h2 {
     animation: fadeIn 1s ease-in-out;
 }
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* Services Section */
-#services {
-    background: rgba(255, 255, 255, 0.8);
-    padding: 50px 20px;
-    margin: 20px auto;
-    max-width: 1200px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.card {
-    border: none;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-}
-
-.card:hover {
-    transform: scale(1.05);
-}
-
-.card-title {
-    font-size: 1.5rem;
-    color: #007bff;
-    margin-bottom: 10px;
-}
-
-.btn-primary {
-    background-color: #007bff;
-    border: none;
-    font-weight: bold;
-}
-
-.btn-primary:hover {
-    background-color: #0056b3;
-}
-
-/* Scrolling Banner */
-.scrolling-banner {
-    border: 2px solid black;
-    overflow: hidden;
-    white-space: nowrap;
-    margin: 20px auto;
-    width: 100%;
-    max-width: 1200px;
-    padding: 10px;
-}
-
-.scrolling-banner p {
-    display: inline-block;
-    animation: scroll-text 10s linear infinite;
-    font-size: 18px;
-    font-weight: bold;
-    color: #000;
-}
-
-@keyframes scroll-text {
-    0% {
-        transform: translateX(100%);
-    }
-    100% {
-        transform: translateX(-100%);
-    }
-}
-
-/* Slideshow */
-.carousel-item img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-}
-
-.carousel-caption {
-    background: rgba(0, 0, 0, 0.6);
-    color: #fff;
-    padding: 10px;
-    border-radius: 8px;
-}
-
-/* Footer */
-footer {
-    background: #f8f9fa;
-    text-align: center;
-    padding: 15px 0;
-    font-size: 14px;
-    color: #555;
-}
-
-footer p {
-    margin: 0;
-}
-
-/* Coupon Section */
-#coupon-section {
-    background: #f8f9fa;
-    padding: 40px 20px;
-    margin: 20px auto;
-    max-width: 800px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.coupon-box {
-    background: #fff;
-    border: 2px dashed #007bff;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.coupon-box h3 {
-    color: #28a745;
-    margin-bottom: 10px;
-}
-
-.coupon-box strong {
-    color: #007bff;
-    font-weight: bold;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    h2 {
-        font-size: 1.8rem;
-    }
-
-    .card-title {
-        font-size: 1.3rem;
-    }
-
-    .btn-primary {
-        font-size: 0.9rem;
-    }
-
-    .scrolling-banner p {
-        font-size: 16px;
-    }
-
-    #services {
-        padding: 30px 10px;
-    }
-}
+/* Rest of the styles remain the same */
