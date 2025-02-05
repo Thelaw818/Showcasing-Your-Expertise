@@ -28,27 +28,49 @@ body {
     height: auto;    /* Maintain aspect ratio */
 }
 
-/* Other styles */
+/* Coupon Section Styling */
+#coupon-section {
+    border: 4px solid;
+    border-image: linear-gradient(to right, black, blue) 1;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: white;
+    width: 5in;   /* Set the width to 5 inches */
+    height: 5in;  /* Set the height to 5 inches */
+    position: fixed;  /* Make it fixed on the page */
+    top: 50%;   /* Position in the center vertically */
+    left: 50%;  /* Position in the center horizontally */
+    transform: translate(-50%, -50%);  /* Offset to exactly center it */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1001; /* Ensure it appears on top */
+}
+
+/* Optionally style the coupon section button */
+#coupon-section button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+#coupon-section button:hover {
+    background-color: #0056b3;
+}
+
+/* Header Styles */
 header {
     background-color: #333;
     color: #fff;
     padding: 10px 0;
     text-align: center;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 10px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
 }
 
 /* Navbar */
@@ -85,4 +107,14 @@ h2 {
 /* Section Style */
 section {
     padding-top: 80px; /* Adjust based on the height of your navbar */
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
