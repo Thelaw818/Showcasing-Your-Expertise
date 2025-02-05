@@ -80,4 +80,7 @@ h2 {
     animation: fadeIn 1s ease-in-out;
 }
 
-/* Rest of the styles remain the same */
+/* Section Style */
+section {
+    padding-top: 80px; /* Adjust based on the height of your navbar */
+}
