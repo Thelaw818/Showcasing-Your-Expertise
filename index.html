@@ -235,97 +235,41 @@
     </section>
 
     <!-- Coupon Section -->
-    <section id="coupon-section" class="text-center py-5">
-        <h2>Exclusive Offer</h2>
-        <p>Click below to get a 50% discount on our services!</p>
-        <button id="show-coupon-btn" class="btn btn-primary">Get 50% Off</button>
-        
-        <!-- Hidden Coupon Popup -->
-        <div id="coupon-popup">
-            <div>
-                <button class="close-btn">&times;</button>
-                <h2>Apply Your Coupon</h2>
-                <p>Enter your coupon code below:</p>
-                <input type="text" placeholder="Coupon Code">
-                <button id="apply-coupon">Apply Coupon</button>
-            </div>
-        </div>
-    </section>
+    <div id="coupon-section">
+        <h2>Exclusive Offer!</h2>
+        <p>Get 50% off your next purchase with our special coupon code:</p>
+        <button id="open-coupon-popup" class="btn btn-primary">Get 50% Off</button>
+    </div>
 
-    <!-- Slideshow -->
-    <section class="py-5 text-center">
-        <div id="servicesCarousel" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#servicesCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#servicesCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#servicesCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                <button type="button" data-bs-target="#servicesCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
-            </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="images/BannerWP_Prodotto_1028x566.jpg" alt="Banner Image" loading="lazy">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Professional Pigeon Flyer</h5>
-                        <p>This banner highlights our cutting-edge technology for pigeon racing enthusiasts.</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="images/fvc_clubhouse.jpg" alt="FVC Clubhouse" loading="lazy">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Fernando Valley Clubhouse</h5>
-                        <p>A hub for community building and training sessions for racing pigeons.</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="images/OriginalFVCLogo300.jpg" alt="FVC Logo" loading="lazy">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Our Legacy</h5>
-                        <p>Showcasing the iconic logo that represents decades of excellence.</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="images/16992129_1934432536792757_7526832457612510511_o.jpg" alt="FVC Event" loading="lazy">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Celebrating Excellence</h5>
-                        <p>A snapshot from one of our premier pigeon racing events.</p>
-                    </div>
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#servicesCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#servicesCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-light text-center py-3">
+    <!-- Coupon Popup -->
+    <div id="coupon-popup">
         <div>
-            <a href="https://facebook.com" target="_blank">Facebook</a> |
-            <a href="https://instagram.com" target="_blank">Instagram</a> |
-            <a href="https://youtube.com" target="_blank">YouTube</a>
+            <button class="close-btn" onclick="closePopup()">&times;</button>
+            <h3>Apply your coupon now!</h3>
+            <p>Use the following coupon code to claim your 50% discount:</p>
+            <p><strong>DISCOUNT50</strong></p>
+            <a href="https://example.com/coupon-page" target="_blank" class="btn btn-primary" id="apply-coupon">Apply Coupon</a>
         </div>
-        <p>Contact us at: support@pigeonservices.com | Phone: +123-456-7890</p>
-        <p class="mb-0">&copy; 2025 Pigeon Services. All rights reserved.</p>
-    </footer>
+    </div>
 
     <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" defer></script>
-    <!-- External JavaScript -->
-    <script src="script.js" defer>
-        document.getElementById('show-coupon-btn').addEventListener('click', function() {
-            document.getElementById('coupon-popup').style.display = 'flex';
-        });
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Function to open the coupon popup
+        document.getElementById("open-coupon-popup").onclick = function() {
+            document.getElementById("coupon-popup").style.display = "flex";
+        };
 
-        document.querySelector('.close-btn').addEventListener('click', function() {
-            document.getElementById('coupon-popup').style.display = 'none';
-        });
+        // Function to close the coupon popup
+        function closePopup() {
+            document.getElementById("coupon-popup").style.display = "none";
+        }
+
+        // Redirect to coupon page when applying coupon
+        document.getElementById("apply-coupon").onclick = function() {
+            window.location.href = "https://example.com/coupon-page"; // Replace with actual link
+        };
     </script>
 </body>
 
 </html>
-
