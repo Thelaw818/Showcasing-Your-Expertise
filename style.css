@@ -49,14 +49,14 @@ body {
     z-index: 1001; /* Ensure it appears on top */
 }
 
-/* Optionally style the coupon section button */
+/* Styling the 'Get 50% Off' button inside the coupon section */
 #coupon-section button {
     margin-top: 15px;
     padding: 10px 20px;
     background-color: #007bff;
+    color: white;
     border: none;
     border-radius: 5px;
-    color: white;
     cursor: pointer;
     font-size: 1rem;
 }
