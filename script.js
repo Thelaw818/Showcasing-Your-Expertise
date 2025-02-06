@@ -22,10 +22,10 @@ openCouponPopupBtn.addEventListener("click", showCouponPopup);
 closeBtn.addEventListener("click", closeCouponPopup);
 
 // Event listener to close the popup when the "Apply Coupon" button is clicked
-applyCouponBtn.addEventListener("click", function() {
-    window.location.href = "https://www.webbuildersguide.com/best-website-builder/cheapest/wordpress-coupon-code/"; // Redirect to coupon page
+document.getElementById("apply-coupon").onclick = function() {
+    window.location.href = "https://www.example.com/offer"; // Redirect to new URL
     closeCouponPopup(); // Close the popup after redirect
-});
+};
 
 // Example: Trigger to show the coupon popup (this could be triggered by an event like a button click)
 showCouponBtn.addEventListener("click", showCouponPopup);
