@@ -25,7 +25,7 @@ body {
     object-fit: cover; /* Make sure the image covers the 4x4 area */
     margin: 10px; /* Spacing between images */
     max-width: 100%; /* Ensure the image does not overflow */
-    height: auto;    /* Maintain aspect ratio */
+    height: auto; /* Maintain aspect ratio */
 }
 
 /* Coupon Section Styling */
