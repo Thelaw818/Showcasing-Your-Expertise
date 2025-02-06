@@ -35,18 +35,18 @@ body {
     padding: 20px;
     border-radius: 8px;
     background-color: white;
-    width: 5in;   /* Set the width to 5 inches */
-    height: 5in;  /* Set the height to 5 inches */
-    position: fixed;  /* Make it fixed on the page */
-    top: 50%;   /* Position in the center vertically */
-    left: 50%;  /* Position in the center horizontally */
-    transform: translate(-50%, -50%);  /* Offset to exactly center it */
+    width: 5in;    /* Set the width to 5 inches */
+    height: 5in;   /* Set the height to 5 inches */
+    position: absolute; /* Use absolute positioning */
+    top: 50%;       /* Center vertically */
+    left: 50%;      /* Center horizontally */
+    transform: translate(-50%, -50%); /* Offset to exactly center */
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    z-index: 1001; /* Ensure it appears on top */
+    z-index: 1001; /* Ensure it appears above other content */
 }
 
 /* Styling the 'Get 50% Off' button inside the coupon section */
