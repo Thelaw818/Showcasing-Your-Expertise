@@ -118,3 +118,45 @@ section {
         opacity: 1;
     }
 }
+
+/* Media Queries for Mobile */
+@media screen and (max-width: 768px) {
+    /* Example: Adjust image size and column layout on small screens */
+    .image-row img {
+        width: 100%; /* Make images fill available width */
+        height: auto; /* Maintain aspect ratio */
+        margin: 10px 0; /* Adjust margin for mobile */
+    }
+
+    /* Adjust the coupon section size and position on mobile */
+    #coupon-section {
+        width: 90%;    /* Increase the width to 90% of the screen */
+        height: auto;  /* Allow the height to adjust for mobile */
+        position: relative; /* Use relative positioning for better mobile layout */
+        top: auto;     /* Remove vertical centering */
+        left: auto;    /* Remove horizontal centering */
+        transform: none; /* Remove the centering transform */
+        margin: 20px auto; /* Center the coupon horizontally with margin */
+    }
+
+    /* Navbar adjustments for mobile */
+    .navbar {
+        background-color: rgba(255, 255, 255, 0.9);
+        box-shadow: none; /* Remove shadow for mobile */
+    }
+
+    /* Navbar Links */
+    .navbar-nav .nav-link {
+        padding: 10px; /* Add some padding for mobile links */
+    }
+
+    /* Section Headings */
+    h2 {
+        font-size: 1.5rem; /* Reduce font size for smaller screens */
+    }
+
+    /* Make sections more mobile-friendly */
+    section {
+        padding-top: 60px; /* Reduce padding on smaller screens */
+    }
+}
